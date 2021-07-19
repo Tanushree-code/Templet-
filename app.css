@@ -23,8 +23,7 @@ body{
     word-wrap: break-word;
     position: relative;
     font-family: "Roboto",sans-serif;
-    font-size: 3rem;
-}
+    font-size: 3rem;}
 
 #pp{
     text-align: center;
@@ -155,15 +154,16 @@ footer{
         padding-right: 29px;
         width: 600px;
     }
-    #pp{
+        #pp{
         font-weight: 400;
-        position:relative;
-        display:block;
         word-spacing: 5px;
-        font-size: 1.17rem;
+        font-size: 18px;
         font-style: italic;
-        margin: auto 50px;
-        box-sizing: border-box;
+        position: relative;
+        display: block;
+        font-family: "Open Sans",sans-serif;
+        height: 86px;
+        width: 340px;
     }
     .ug{
         width: 200px;
