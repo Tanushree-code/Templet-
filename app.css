@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 .container{
-    text-align: center;
     color: #111111;
     background-color: #f2f2f2;
-    background-image: none;
 }
 body{
     font-family: 'Libre Franklin', sans-serif;
     background-color: #f2f2f2;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 .h1{
     width: 580px;
@@ -22,7 +22,7 @@ body{
     text-align: center;
     word-wrap: break-word;
     position: relative;
-    font-family: Roboto,sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 3rem;
 }
 
@@ -44,31 +44,32 @@ body{
     margin-right: 64px;
     justify-content: space-around;
     flex-wrap: nowrap;
-    padding: 10px,5px;
-
+    padding: 10px,5px; 
 }
 .oop{
     text-align: center;
-    margin-top: 39px;
+    margin: 24px 0 0;
+    position: relative;
     font-weight: 400;
 }
 .box{
-    padding: 10px,10px;
+    padding: 20px;
     color: #111111;
     margin: 27px;
     text-align: center;
     font-size: 18px;
     line-height: 35px;
-    text-align: center;
     background-color: white !important;
     font-family: 'Open Sans',sans-serif;
     border-radius: 10px;
     -webkit-text-size-adjust: 100%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px 0 rgb(41 45 51 / 20%);
+    min-height: 278px;
+    height: auto;
 }
 .box2-container{
     display: flex;
-    margin-top: 55px;
+    margin-top: 30px;
     margin-left: 64px;
     margin-right: 64px;
     margin-bottom: 55px;
@@ -77,9 +78,17 @@ body{
 }
 .po{
     text-align: center;
-    word-spacing: 5px;
-    padding: 5px 10px;
-    margin: 35px 23px;
+    word-spacing: 8px;
+    -webkit-text-size-adjust: 100%;
+    padding: 5px 6px;
+    margin: 30px 20px;
+    line-height: 1.52rem;
+    font-style: italic;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 footer{
     text-align: center;
@@ -93,28 +102,32 @@ footer{
 
 .img{
     padding-top: 20px;
+    height: 71px;
+    width: 71px;
+    margin: 0 auto;
 }
 .ug{
-    width: 250px;
-    height: 6px;
+    width: 200px;
+    height: 5px;
     transform-origin: right center;
     margin: 24px auto ;
-    border-right-width: 0;
-    border-left-width: 0;
-    border-bottom-width: 0;
     border-color: #f84e41;
-    border-width: 6px;
-    border-style:ridge;
+    border-width: 4px;
+    border-style:solid;
+    border-radius: 12px;
 }
 
 
 
-@media (max-width:560px){
+@media (min-width:340px) and (max-width:560px){
     .box-container{
         display: block;
+        margin-left: 89px;
     }
     .box2-container{
         display: block;
+        margin-top: auto;
+        margin-left: 89px;
     }
     .box{
         width: 407px;
@@ -128,7 +141,7 @@ footer{
         font-family: 'Open Sans',sans-serif;
         border-radius: 10px;
         -webkit-text-size-adjust: 100%;
-        box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+        box-shadow: 0 0 25px 0 rgb(41 45 51 / 20%);
         box-sizing: border-box;
     }   
     footer{
@@ -143,34 +156,31 @@ footer{
         width: 600px;
     }
     #pp{
-        text-align:center;
         font-weight: 400;
-        font-style: italic;
-        word-wrap: break-word;
         position:relative;
-        display:inline-block;
-        padding: 0;
+        display:block;
         word-spacing: 5px;
-        font-size: 1.5rem;
-        margin-right: 119px;
-        margin-left: 169px;
+        font-size: 1.17rem;
+        font-style: italic;
+        margin: auto 50px;
         box-sizing: border-box;
     }
     .ug{
-        width: 270px;
+        width: 200px;
         height: 6px;
         transform-origin: center;
-        margin: 34px 157px ;
+        margin: 34px 190px ;
         border-right-width: 0;
         border-left-width: 0;
         border-bottom-width: 0;
         border-color: #f84e41;
-        border-width: 6px;
-        border-style:ridge;
+        border-width: 4px;
+        border-style:solid;
+        border-radius: 12px;
     }
 }
 
-@media (min-width:561px) and (max-width:648px){
+@media (min-width:561px) and (max-width:810px){
     .box-container{
         display: inline;
     }
@@ -188,6 +198,8 @@ footer{
         font-family: 'Open Sans',sans-serif;
         border-radius: 10px;
         -webkit-text-size-adjust: 100%;
-        box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+        box-shadow: 0 0 25px 0 rgb(41 45 51 / 20%);
+        margin-top: 0.00001rem;
     }   
 }
+
